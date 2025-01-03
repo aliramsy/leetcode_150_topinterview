@@ -6,7 +6,6 @@ class Solution:
         while i < len(prices):
             maximum = max(prices[i:])
             max_index = prices.index(maximum, i)
-            print(max_index)
             minimum = min(prices[:max_index + 1])
             if maximum - minimum > result:
                 result = maximum - minimum
